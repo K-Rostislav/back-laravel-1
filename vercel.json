@@ -13,22 +13,6 @@
     ],
     "routes": [
         {
-            "src": "/build/(.*)",
-            "dest": "/public/build/$1"
-        },
-        {
-            "src": "/css/(.*)",
-            "dest": "/public/css/$1"
-        },
-        {
-            "src": "/js/(.*)",
-            "dest": "/public/js/$1"
-        },
-        {
-            "src": "/images/(.*)",
-            "dest": "/public/images/$1"
-        },
-        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
@@ -37,19 +21,17 @@
         "APP_NAME": "Laravel",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://your-domain.vercel.app",
-        
+        "APP_URL": "http://localhost",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
-        "VIEW_COMPILED_PATH": "/tmp",
-
+        "APP_STORAGE": "/tmp/app",
+        "VIEW_COMPILED_PATH": "/tmp/views",
         "CACHE_DRIVER": "array",
-        "LOG_CHANNEL": "stack",
-        "SESSION_DRIVER": "array",
-        "SSR_TEMP_PATH": "/tmp/ssr",
-        "NODE_PATH": "node"
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "sqlite"
     }
 }
